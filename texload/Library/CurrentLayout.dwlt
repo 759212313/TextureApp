@@ -371,18 +371,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 5e3000001a310000be2e0000c22b0000d42b00003a2c00000e2d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: readPictures
-      m_OriginalName: readPictures
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1822
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_CreateAssetUtility:

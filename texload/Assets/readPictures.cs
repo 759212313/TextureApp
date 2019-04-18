@@ -10,7 +10,7 @@ public class readPictures : MonoBehaviour
     private Image image;
     public Text text;
 
-    private string picpathWWW = "143827ohmbrruorz6566iz.jpg"; //WWW的加载方式路径
+    private string picpathWWW = "1.jpg"; //WWW的加载方式路径
     //private string url = "http://192.168.43.1/tex/";
     private string url = "https://raw.githubusercontent.com/759212313/TextureApp/master/TexAsset/";
     private int idx = 1;
