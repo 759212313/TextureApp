@@ -33,6 +33,7 @@ public class readPictures : MonoBehaviour
         DestroyImmediate(image.mainTexture);
         picpathWWW = idx + ".jpg";
         LoadByWWW();
+        text.text = idx + "/" + length;
     }
 
     public void NextPage()
@@ -40,7 +41,7 @@ public class readPictures : MonoBehaviour
         idx += 1;
         if (idx > length)
         {
-            idx = length;
+            idx = 1;
         }
         DestroyImmediate(image.mainTexture);
         picpathWWW = idx + ".jpg";
