@@ -10,8 +10,9 @@ public class readPictures : MonoBehaviour
     private Image image;
     public Text text;
 
-    private string picpathWWW = "1.jpg"; //WWW的加载方式路径
-    private string url = "http://192.168.43.1/tex/";
+    private string picpathWWW = "143827ohmbrruorz6566iz.jpg"; //WWW的加载方式路径
+    //private string url = "http://192.168.43.1/tex/";
+    private string url = "https://raw.githubusercontent.com/759212313/TextureApp/master/TexAsset/";
     private int idx = 1;
     public int length = 8;
 
@@ -55,8 +56,7 @@ public class readPictures : MonoBehaviour
 
     private IEnumerator Load()
     {
-        WWW www = new WWW(url + picpathWWW);//只能放URL
-                                            //        WWW www = new WWW(url);//只能放URL 这里可以换做网络的URL
+        WWW www = new WWW(url + picpathWWW);//只能放URL    
         yield return www;
         if (www != null && string.IsNullOrEmpty(www.error))
         {
@@ -65,6 +65,10 @@ public class readPictures : MonoBehaviour
             Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 
             image.sprite = sprite;
+        }
+        else
+        {
+            Debug.LogError(www.error);
         }
     }
 
